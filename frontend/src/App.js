@@ -1,10 +1,14 @@
-import classes from "./App.module.css";
+import { Container } from "react-bootstrap";
+
+//local
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className={classes.app}>
-      <h1 className={classes.title}>Hello</h1>
-    </div>
+    <>
+      <Header />
+      <Container>Hello</Container>
+    </>
   );
 }
 
