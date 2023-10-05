@@ -1,19 +1,25 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-
-//local
-import classes from "./Header.module.css";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
   return (
     <Navbar bg="light" variant="light" expand="md" collapseOnSelect>
       <Container>
-        <Navbar.Brand>Bandhan</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>Bandhan</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <LinkContainer to="/">
+              <Nav.Link href="/">Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/auth">
+              <Nav.Link href="/login">Login</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
