@@ -6,7 +6,7 @@ import {
 
 //local
 import App from "./App";
-import HomeScreen from "./pages/HomeScreen";
+import HomeScreen from "./pages/HomeScreen/HomeScreen";
 import ContactScreen from "./pages/ContactScreen";
 import AuthScreen from "./pages/AuthScreen";
 

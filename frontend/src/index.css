@@ -11,7 +11,7 @@ body {
 
   --grey-color: #404145;
   --grey-dark-color: #2d2e30;
-  --grey-light-color: #797a7d;
+  --grey-light-color: #a0a0a2;
 
   color: var(--grey-color);
   background-color: var(--background-color);
