@@ -1,4 +1,5 @@
 import { Row, Col, Image } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 
 //local
 import classes from "./HomeScreen.module.css";
@@ -9,7 +10,20 @@ const HomeScreen = () => {
     <div className={classes.main}>
       <Row>
         <Col md="5">
-          <h1 className={classes.title}>Where Flavor Meets Elegance</h1>
+          <h1 className={classes.title}>
+            Where Flavor Meets
+            <Typewriter
+              className={classes.sd}
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 40,
+                strings: ["Elegance", "Excellence", "Delight"],
+                cursor: "",
+              }}
+            />
+          </h1>
+
           <div className={classes.subTitle}>
             At Bandhan, we take pride in serving up unmatched flavor and quality
             every day
