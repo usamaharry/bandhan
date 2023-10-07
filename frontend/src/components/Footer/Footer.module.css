@@ -1,0 +1,27 @@
+.main {
+  background-color: black;
+  color: var(--grey-light-color);
+  text-align: center;
+  padding: 3rem;
+}
+
+.footer-header {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.footer-items {
+  padding: 0;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-header {
+    margin-top: 1.5rem;
+  }
+}
